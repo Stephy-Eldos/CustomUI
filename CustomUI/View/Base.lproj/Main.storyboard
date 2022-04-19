@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvS-ed-dch">
+                                <rect key="frame" x="109.5" y="74" width="195" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7i-k9-zeD" customClass="InputField" customModule="CustomUI" customModuleProvider="target">
+                                <rect key="frame" x="72.5" y="115" width="269" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="w6x-mk-8Aa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heading" value="Username"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="emailaddress"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="user"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-1W-5E8" customClass="InputField" customModule="CustomUI" customModuleProvider="target">
+                                <rect key="frame" x="72.5" y="163" width="269" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fML-uQ-B3f"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heading" value="Password"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="lock"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJ2-KL-fIE">
+                                <rect key="frame" x="0.0" y="682" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4L-He-Lav">
+                                        <rect key="frame" x="117.5" y="15" width="179" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSZ-yT-SWI" customClass="UnderLinedButton" customModule="CustomUI" customModuleProvider="target">
+                                        <rect key="frame" x="155.5" y="35" width="103" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="o0q-1k-M6Q"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Register here">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstItem="M4L-He-Lav" firstAttribute="top" secondItem="JJ2-KL-fIE" secondAttribute="top" constant="15" id="FJf-BY-jzz"/>
+                                    <constraint firstItem="qSZ-yT-SWI" firstAttribute="top" secondItem="M4L-He-Lav" secondAttribute="top" constant="20" id="N8d-9y-IHg"/>
+                                    <constraint firstItem="qSZ-yT-SWI" firstAttribute="centerX" secondItem="JJ2-KL-fIE" secondAttribute="centerX" id="QxO-VB-aRi"/>
+                                    <constraint firstItem="M4L-He-Lav" firstAttribute="centerX" secondItem="JJ2-KL-fIE" secondAttribute="centerX" id="VPk-V5-OhC"/>
+                                    <constraint firstAttribute="height" constant="80" id="e3X-QR-UpJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l14-ox-8W4" customClass="RoundedButton" customModule="CustomUI" customModuleProvider="target">
+                                <rect key="frame" x="83" y="223" width="248" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Efq-GH-J0t"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LOGIN">
+                                    <backgroundConfiguration key="background"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ueW-1W-5E8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3xh-k4-zyJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JJ2-KL-fIE" secondAttribute="bottom" constant="100" id="4Em-Yt-XD8"/>
+                            <constraint firstItem="JJ2-KL-fIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4l4-lj-zlf"/>
+                            <constraint firstItem="z7i-k9-zeD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="74l-Xh-Y7l"/>
+                            <constraint firstItem="z7i-k9-zeD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.65" id="F3V-hh-Gtd"/>
+                            <constraint firstItem="ueW-1W-5E8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.65" id="Q4H-fp-XOJ"/>
+                            <constraint firstItem="l14-ox-8W4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="Vfy-jS-szR"/>
+                            <constraint firstItem="dvS-ed-dch" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="aFy-0k-rxs"/>
+                            <constraint firstItem="ueW-1W-5E8" firstAttribute="top" secondItem="z7i-k9-zeD" secondAttribute="bottom" constant="8" id="eC7-Mb-8x8"/>
+                            <constraint firstItem="l14-ox-8W4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fcD-9F-a4c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JJ2-KL-fIE" secondAttribute="trailing" id="ke0-jM-sKO"/>
+                            <constraint firstItem="l14-ox-8W4" firstAttribute="top" secondItem="ueW-1W-5E8" secondAttribute="bottom" constant="20" id="qQ1-ji-bAy"/>
+                            <constraint firstItem="z7i-k9-zeD" firstAttribute="top" secondItem="dvS-ed-dch" secondAttribute="bottom" constant="20" id="rYz-ew-rZx"/>
+                            <constraint firstItem="dvS-ed-dch" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zXt-Qs-bKn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="l14-ox-8W4">
+            <size key="intrinsicContentSize" width="66.5" height="31"/>
+        </designable>
+        <designable name="qSZ-yT-SWI">
+            <size key="intrinsicContentSize" width="103" height="28.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="lock" width="150" height="150"/>
+        <image name="user" width="150" height="150"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
