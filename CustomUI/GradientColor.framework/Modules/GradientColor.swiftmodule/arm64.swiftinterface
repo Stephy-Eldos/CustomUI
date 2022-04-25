@@ -1,0 +1,34 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name GradientColor
+@_exported import GradientColor
+import Swift
+import UIKit
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class GradientButton : UIKit.UIButton {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var cornerRadius: CoreGraphics.CGFloat {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var startColor: UIKit.UIColor {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var endColor: UIKit.UIColor {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var startPoint: CoreGraphics.CGPoint {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var endPoint: CoreGraphics.CGPoint {
+    @objc get
+    @objc set(value)
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSublayers(of layer: QuartzCore.CALayer)
+  @objc deinit
+}

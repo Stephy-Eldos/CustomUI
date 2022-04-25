@@ -1,0 +1,11 @@
+framework module RoundedButton {
+  umbrella header "RoundedButton.h"
+
+  export *
+  module * { export * }
+}
+
+module RoundedButton.Swift {
+    header "RoundedButton-Swift.h"
+    requires objc
+}

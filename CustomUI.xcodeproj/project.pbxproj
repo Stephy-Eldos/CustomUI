@@ -7,20 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A73EB28F28163B5A0031FCEC /* InputField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB28D28163B500031FCEC /* InputField.framework */; platformFilter = ios; };
+		A73EB29028163B5A0031FCEC /* InputField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB28D28163B500031FCEC /* InputField.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A73EB29828163C540031FCEC /* GradientColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29628163C3B0031FCEC /* GradientColor.framework */; platformFilter = ios; };
+		A73EB29928163C540031FCEC /* GradientColor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29628163C3B0031FCEC /* GradientColor.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A73EB29A28163C560031FCEC /* RoundedButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29228163BB80031FCEC /* RoundedButton.framework */; platformFilter = ios; };
+		A73EB29B28163C560031FCEC /* RoundedButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29228163BB80031FCEC /* RoundedButton.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A73EB29C28163C580031FCEC /* ValidatorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29428163BF50031FCEC /* ValidatorFramework.framework */; platformFilter = ios; };
+		A73EB29D28163C580031FCEC /* ValidatorFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29428163BF50031FCEC /* ValidatorFramework.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A73EB2B9281675140031FCEC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73EB2B8281675140031FCEC /* RegisterViewController.swift */; };
+		A73EB2D228167BE60031FCEC /* UnderLinedButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB2D028167BDD0031FCEC /* UnderLinedButton.framework */; platformFilter = ios; };
+		A73EB2D328167BE60031FCEC /* UnderLinedButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB2D028167BDD0031FCEC /* UnderLinedButton.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A73EB2DA281682350031FCEC /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73EB2D9281682350031FCEC /* StringConstants.swift */; };
+		A73EB2DD281683ED0031FCEC /* PopAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB2DB281683E50031FCEC /* PopAlertView.framework */; platformFilter = ios; };
+		A73EB2DE281683ED0031FCEC /* PopAlertView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB2DB281683E50031FCEC /* PopAlertView.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7748BCD280E53CC0069ED73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748BCC280E53CC0069ED73 /* AppDelegate.swift */; };
 		A7748BCF280E53CC0069ED73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748BCE280E53CC0069ED73 /* SceneDelegate.swift */; };
 		A7748BD1280E53CC0069ED73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748BD0280E53CC0069ED73 /* ViewController.swift */; };
 		A7748BD4280E53CC0069ED73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7748BD2280E53CC0069ED73 /* Main.storyboard */; };
 		A7748BD6280E53CD0069ED73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7748BD5280E53CD0069ED73 /* Assets.xcassets */; };
 		A7748BD9280E53CD0069ED73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7748BD7280E53CD0069ED73 /* LaunchScreen.storyboard */; };
-		A7748BE1280E55330069ED73 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748BE0280E55330069ED73 /* RoundedButton.swift */; };
-		A7748BEA280E8E530069ED73 /* UnderLinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748BE9280E8E530069ED73 /* UnderLinedButton.swift */; };
 		A7748C3D280EAB290069ED73 /* TwoLinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748C3C280EAB290069ED73 /* TwoLinedButton.swift */; };
 		A7748C3F280EAB400069ED73 /* TwoLinedButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748C3E280EAB400069ED73 /* TwoLinedButtonViewModel.swift */; };
-		A7748C42280EAC390069ED73 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748C41280EAC390069ED73 /* InputField.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A73EB29128163B5A0031FCEC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A73EB29D28163C580031FCEC /* ValidatorFramework.framework in Embed Frameworks */,
+				A73EB2D328167BE60031FCEC /* UnderLinedButton.framework in Embed Frameworks */,
+				A73EB29928163C540031FCEC /* GradientColor.framework in Embed Frameworks */,
+				A73EB29B28163C560031FCEC /* RoundedButton.framework in Embed Frameworks */,
+				A73EB2DE281683ED0031FCEC /* PopAlertView.framework in Embed Frameworks */,
+				A73EB29028163B5A0031FCEC /* InputField.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A73EB28D28163B500031FCEC /* InputField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InputField.framework; sourceTree = "<group>"; };
+		A73EB29228163BB80031FCEC /* RoundedButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RoundedButton.framework; sourceTree = "<group>"; };
+		A73EB29428163BF50031FCEC /* ValidatorFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ValidatorFramework.framework; sourceTree = "<group>"; };
+		A73EB29628163C3B0031FCEC /* GradientColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GradientColor.framework; sourceTree = "<group>"; };
+		A73EB2B8281675140031FCEC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A73EB2D028167BDD0031FCEC /* UnderLinedButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnderLinedButton.framework; sourceTree = "<group>"; };
+		A73EB2D9281682350031FCEC /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		A73EB2DB281683E50031FCEC /* PopAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PopAlertView.framework; sourceTree = "<group>"; };
 		A7748BC9280E53CC0069ED73 /* CustomUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7748BCC280E53CC0069ED73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7748BCE280E53CC0069ED73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,11 +67,8 @@
 		A7748BD5280E53CD0069ED73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7748BD8280E53CD0069ED73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7748BDA280E53CD0069ED73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7748BE0280E55330069ED73 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		A7748BE9280E8E530069ED73 /* UnderLinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLinedButton.swift; sourceTree = "<group>"; };
 		A7748C3C280EAB290069ED73 /* TwoLinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLinedButton.swift; sourceTree = "<group>"; };
 		A7748C3E280EAB400069ED73 /* TwoLinedButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLinedButtonViewModel.swift; sourceTree = "<group>"; };
-		A7748C41280EAC390069ED73 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +76,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73EB29C28163C580031FCEC /* ValidatorFramework.framework in Frameworks */,
+				A73EB2D228167BE60031FCEC /* UnderLinedButton.framework in Frameworks */,
+				A73EB29A28163C560031FCEC /* RoundedButton.framework in Frameworks */,
+				A73EB29828163C540031FCEC /* GradientColor.framework in Frameworks */,
+				A73EB2DD281683ED0031FCEC /* PopAlertView.framework in Frameworks */,
+				A73EB28F28163B5A0031FCEC /* InputField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A73EB2D82816821B0031FCEC /* Contants */ = {
+			isa = PBXGroup;
+			children = (
+				A73EB2D9281682350031FCEC /* StringConstants.swift */,
+			);
+			path = Contants;
+			sourceTree = "<group>";
+		};
 		A7748BC0280E53CC0069ED73 = {
 			isa = PBXGroup;
 			children = (
@@ -68,12 +117,19 @@
 			children = (
 				A7748BCC280E53CC0069ED73 /* AppDelegate.swift */,
 				A7748BCE280E53CC0069ED73 /* SceneDelegate.swift */,
+				A73EB2D82816821B0031FCEC /* Contants */,
 				A7748BE6280E8A0D0069ED73 /* Model */,
 				A7748BE8280E8A3F0069ED73 /* View */,
 				A7748C40280EAB4A0069ED73 /* ViewModel */,
 				A7748BD5280E53CD0069ED73 /* Assets.xcassets */,
 				A7748BD7280E53CD0069ED73 /* LaunchScreen.storyboard */,
 				A7748BDA280E53CD0069ED73 /* Info.plist */,
+				A73EB28D28163B500031FCEC /* InputField.framework */,
+				A73EB29228163BB80031FCEC /* RoundedButton.framework */,
+				A73EB29428163BF50031FCEC /* ValidatorFramework.framework */,
+				A73EB29628163C3B0031FCEC /* GradientColor.framework */,
+				A73EB2D028167BDD0031FCEC /* UnderLinedButton.framework */,
+				A73EB2DB281683E50031FCEC /* PopAlertView.framework */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -82,9 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				A7748C3C280EAB290069ED73 /* TwoLinedButton.swift */,
-				A7748C41280EAC390069ED73 /* InputField.swift */,
-				A7748BE0280E55330069ED73 /* RoundedButton.swift */,
-				A7748BE9280E8E530069ED73 /* UnderLinedButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,8 +145,9 @@
 		A7748BE8280E8A3F0069ED73 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A7748BD0280E53CC0069ED73 /* ViewController.swift */,
 				A7748BD2280E53CC0069ED73 /* Main.storyboard */,
+				A7748BD0280E53CC0069ED73 /* ViewController.swift */,
+				A73EB2B8281675140031FCEC /* RegisterViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +170,7 @@
 				A7748BC5280E53CC0069ED73 /* Sources */,
 				A7748BC6280E53CC0069ED73 /* Frameworks */,
 				A7748BC7280E53CC0069ED73 /* Resources */,
+				A73EB29128163B5A0031FCEC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,14 +232,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7748BE1280E55330069ED73 /* RoundedButton.swift in Sources */,
 				A7748C3D280EAB290069ED73 /* TwoLinedButton.swift in Sources */,
 				A7748C3F280EAB400069ED73 /* TwoLinedButtonViewModel.swift in Sources */,
+				A73EB2B9281675140031FCEC /* RegisterViewController.swift in Sources */,
 				A7748BD1280E53CC0069ED73 /* ViewController.swift in Sources */,
 				A7748BCD280E53CC0069ED73 /* AppDelegate.swift in Sources */,
-				A7748BEA280E8E530069ED73 /* UnderLinedButton.swift in Sources */,
 				A7748BCF280E53CC0069ED73 /* SceneDelegate.swift in Sources */,
-				A7748C42280EAC390069ED73 /* InputField.swift in Sources */,
+				A73EB2DA281682350031FCEC /* StringConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +388,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RYLP63S2K7;
+				EXCLUDED_ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomUI",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -363,6 +422,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RYLP63S2K7;
+				EXCLUDED_ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomUI",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

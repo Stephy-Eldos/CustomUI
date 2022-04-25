@@ -1,0 +1,61 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name InputField
+@_exported import InputField
+import Swift
+import UIKit
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class InputField : UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var image: UIKit.UIImage? {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var rightActionImage: UIKit.UIImage? {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var placeholder: Swift.String? {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var text: Swift.String? {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var numberOfLines: Swift.Int {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var heading: Swift.String? {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var textColor: UIKit.UIColor {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var isSecureTextEntry: Swift.Bool {
+    @objc get
+    @objc set(value)
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var dismissOnReturn: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var imageView: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) open var textField: UIKit.UITextField
+  @_Concurrency.MainActor(unsafe) open var underlinerView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) open var labelHeading: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) open var buttonRightAction: UIKit.UIButton
+  @_Concurrency.MainActor(unsafe) open var labelInvalidHeading: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) open var textView: UIKit.UITextView
+  @_Concurrency.MainActor(unsafe) open var constraintImageWidth: UIKit.NSLayoutConstraint?
+  @_Concurrency.MainActor(unsafe) open var constraintHeaderHeight: UIKit.NSLayoutConstraint?
+  @_Concurrency.MainActor(unsafe) open var constraintRightActionButtonWidth: UIKit.NSLayoutConstraint?
+  @_Concurrency.MainActor(unsafe) open var rightAction: (() -> Swift.Void)?
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+extension InputField.InputField : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+}

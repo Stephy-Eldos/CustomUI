@@ -1,0 +1,11 @@
+framework module GradientColor {
+  umbrella header "GradientColor.h"
+
+  export *
+  module * { export * }
+}
+
+module GradientColor.Swift {
+    header "GradientColor-Swift.h"
+    requires objc
+}
