@@ -7,28 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A73EB28F28163B5A0031FCEC /* InputField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB28D28163B500031FCEC /* InputField.framework */; platformFilter = ios; };
-		A73EB29028163B5A0031FCEC /* InputField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB28D28163B500031FCEC /* InputField.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A73EB29828163C540031FCEC /* GradientColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29628163C3B0031FCEC /* GradientColor.framework */; platformFilter = ios; };
-		A73EB29928163C540031FCEC /* GradientColor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29628163C3B0031FCEC /* GradientColor.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A73EB29A28163C560031FCEC /* RoundedButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29228163BB80031FCEC /* RoundedButton.framework */; platformFilter = ios; };
-		A73EB29B28163C560031FCEC /* RoundedButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29228163BB80031FCEC /* RoundedButton.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A73EB29C28163C580031FCEC /* ValidatorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29428163BF50031FCEC /* ValidatorFramework.framework */; platformFilter = ios; };
-		A73EB29D28163C580031FCEC /* ValidatorFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB29428163BF50031FCEC /* ValidatorFramework.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A701004F281A7DC500E3236C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701004E281A7DC500E3236C /* HomeViewController.swift */; };
+		A7010064281A9C5300E3236C /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010063281A9C5300E3236C /* KeyChain.swift */; };
+		A7010066281A9CD700E3236C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010065281A9CD700E3236C /* Settings.swift */; };
+		A7010068281A9DEC00E3236C /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010067281A9DEC00E3236C /* UserProfile.swift */; };
+		A701006A281AD95700E3236C /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010069281AD95700E3236C /* RegisterViewModel.swift */; };
+		A701006C281ADA5000E3236C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701006B281ADA5000E3236C /* HomeViewModel.swift */; };
+		A7010072281AF1B700E3236C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010071281AF1B700E3236C /* LoginViewModel.swift */; };
+		A7010086281AFE8F00E3236C /* CustomUIFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7010084281AFE8600E3236C /* CustomUIFramework.xcframework */; };
+		A7010087281AFE8F00E3236C /* CustomUIFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7010084281AFE8600E3236C /* CustomUIFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A73EB2B9281675140031FCEC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73EB2B8281675140031FCEC /* RegisterViewController.swift */; };
-		A73EB2D228167BE60031FCEC /* UnderLinedButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB2D028167BDD0031FCEC /* UnderLinedButton.framework */; platformFilter = ios; };
-		A73EB2D328167BE60031FCEC /* UnderLinedButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB2D028167BDD0031FCEC /* UnderLinedButton.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A73EB2DA281682350031FCEC /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73EB2D9281682350031FCEC /* StringConstants.swift */; };
-		A73EB2DD281683ED0031FCEC /* PopAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB2DB281683E50031FCEC /* PopAlertView.framework */; platformFilter = ios; };
-		A73EB2DE281683ED0031FCEC /* PopAlertView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73EB2DB281683E50031FCEC /* PopAlertView.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7748BCD280E53CC0069ED73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748BCC280E53CC0069ED73 /* AppDelegate.swift */; };
 		A7748BCF280E53CC0069ED73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748BCE280E53CC0069ED73 /* SceneDelegate.swift */; };
 		A7748BD1280E53CC0069ED73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748BD0280E53CC0069ED73 /* ViewController.swift */; };
 		A7748BD4280E53CC0069ED73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7748BD2280E53CC0069ED73 /* Main.storyboard */; };
 		A7748BD6280E53CD0069ED73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7748BD5280E53CD0069ED73 /* Assets.xcassets */; };
 		A7748BD9280E53CD0069ED73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7748BD7280E53CD0069ED73 /* LaunchScreen.storyboard */; };
-		A7748C3D280EAB290069ED73 /* TwoLinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748C3C280EAB290069ED73 /* TwoLinedButton.swift */; };
-		A7748C3F280EAB400069ED73 /* TwoLinedButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7748C3E280EAB400069ED73 /* TwoLinedButtonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,12 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A73EB29D28163C580031FCEC /* ValidatorFramework.framework in Embed Frameworks */,
-				A73EB2D328167BE60031FCEC /* UnderLinedButton.framework in Embed Frameworks */,
-				A73EB29928163C540031FCEC /* GradientColor.framework in Embed Frameworks */,
-				A73EB29B28163C560031FCEC /* RoundedButton.framework in Embed Frameworks */,
-				A73EB2DE281683ED0031FCEC /* PopAlertView.framework in Embed Frameworks */,
-				A73EB29028163B5A0031FCEC /* InputField.framework in Embed Frameworks */,
+				A7010087281AFE8F00E3236C /* CustomUIFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,14 +41,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A73EB28D28163B500031FCEC /* InputField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InputField.framework; sourceTree = "<group>"; };
-		A73EB29228163BB80031FCEC /* RoundedButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RoundedButton.framework; sourceTree = "<group>"; };
-		A73EB29428163BF50031FCEC /* ValidatorFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ValidatorFramework.framework; sourceTree = "<group>"; };
-		A73EB29628163C3B0031FCEC /* GradientColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GradientColor.framework; sourceTree = "<group>"; };
+		A701004E281A7DC500E3236C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A7010063281A9C5300E3236C /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		A7010065281A9CD700E3236C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A7010067281A9DEC00E3236C /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		A7010069281AD95700E3236C /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		A701006B281ADA5000E3236C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A7010071281AF1B700E3236C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A7010084281AFE8600E3236C /* CustomUIFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CustomUIFramework.xcframework; sourceTree = "<group>"; };
 		A73EB2B8281675140031FCEC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		A73EB2D028167BDD0031FCEC /* UnderLinedButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnderLinedButton.framework; sourceTree = "<group>"; };
 		A73EB2D9281682350031FCEC /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
-		A73EB2DB281683E50031FCEC /* PopAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PopAlertView.framework; sourceTree = "<group>"; };
 		A7748BC9280E53CC0069ED73 /* CustomUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7748BCC280E53CC0069ED73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7748BCE280E53CC0069ED73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,8 +59,6 @@
 		A7748BD5280E53CD0069ED73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7748BD8280E53CD0069ED73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7748BDA280E53CD0069ED73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7748C3C280EAB290069ED73 /* TwoLinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLinedButton.swift; sourceTree = "<group>"; };
-		A7748C3E280EAB400069ED73 /* TwoLinedButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLinedButtonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,18 +66,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A73EB29C28163C580031FCEC /* ValidatorFramework.framework in Frameworks */,
-				A73EB2D228167BE60031FCEC /* UnderLinedButton.framework in Frameworks */,
-				A73EB29A28163C560031FCEC /* RoundedButton.framework in Frameworks */,
-				A73EB29828163C540031FCEC /* GradientColor.framework in Frameworks */,
-				A73EB2DD281683ED0031FCEC /* PopAlertView.framework in Frameworks */,
-				A73EB28F28163B5A0031FCEC /* InputField.framework in Frameworks */,
+				A7010086281AFE8F00E3236C /* CustomUIFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7010062281A9C4100E3236C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A7010063281A9C5300E3236C /* KeyChain.swift */,
+				A7010065281A9CD700E3236C /* Settings.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A729758F2819A7E400DA9B61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A73EB2D82816821B0031FCEC /* Contants */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +102,7 @@
 			children = (
 				A7748BCB280E53CC0069ED73 /* CustomUI */,
 				A7748BCA280E53CC0069ED73 /* Products */,
+				A729758F2819A7E400DA9B61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,18 +120,14 @@
 				A7748BCC280E53CC0069ED73 /* AppDelegate.swift */,
 				A7748BCE280E53CC0069ED73 /* SceneDelegate.swift */,
 				A73EB2D82816821B0031FCEC /* Contants */,
+				A7010062281A9C4100E3236C /* Utility */,
 				A7748BE6280E8A0D0069ED73 /* Model */,
 				A7748BE8280E8A3F0069ED73 /* View */,
 				A7748C40280EAB4A0069ED73 /* ViewModel */,
 				A7748BD5280E53CD0069ED73 /* Assets.xcassets */,
 				A7748BD7280E53CD0069ED73 /* LaunchScreen.storyboard */,
 				A7748BDA280E53CD0069ED73 /* Info.plist */,
-				A73EB28D28163B500031FCEC /* InputField.framework */,
-				A73EB29228163BB80031FCEC /* RoundedButton.framework */,
-				A73EB29428163BF50031FCEC /* ValidatorFramework.framework */,
-				A73EB29628163C3B0031FCEC /* GradientColor.framework */,
-				A73EB2D028167BDD0031FCEC /* UnderLinedButton.framework */,
-				A73EB2DB281683E50031FCEC /* PopAlertView.framework */,
+				A7010084281AFE8600E3236C /* CustomUIFramework.xcframework */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -137,7 +135,7 @@
 		A7748BE6280E8A0D0069ED73 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A7748C3C280EAB290069ED73 /* TwoLinedButton.swift */,
+				A7010067281A9DEC00E3236C /* UserProfile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +146,7 @@
 				A7748BD2280E53CC0069ED73 /* Main.storyboard */,
 				A7748BD0280E53CC0069ED73 /* ViewController.swift */,
 				A73EB2B8281675140031FCEC /* RegisterViewController.swift */,
+				A701004E281A7DC500E3236C /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,7 +154,9 @@
 		A7748C40280EAB4A0069ED73 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A7748C3E280EAB400069ED73 /* TwoLinedButtonViewModel.swift */,
+				A7010069281AD95700E3236C /* RegisterViewModel.swift */,
+				A7010071281AF1B700E3236C /* LoginViewModel.swift */,
+				A701006B281ADA5000E3236C /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -232,13 +233,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7748C3D280EAB290069ED73 /* TwoLinedButton.swift in Sources */,
-				A7748C3F280EAB400069ED73 /* TwoLinedButtonViewModel.swift in Sources */,
 				A73EB2B9281675140031FCEC /* RegisterViewController.swift in Sources */,
+				A701006C281ADA5000E3236C /* HomeViewModel.swift in Sources */,
+				A701006A281AD95700E3236C /* RegisterViewModel.swift in Sources */,
 				A7748BD1280E53CC0069ED73 /* ViewController.swift in Sources */,
+				A7010066281A9CD700E3236C /* Settings.swift in Sources */,
 				A7748BCD280E53CC0069ED73 /* AppDelegate.swift in Sources */,
 				A7748BCF280E53CC0069ED73 /* SceneDelegate.swift in Sources */,
+				A7010064281A9C5300E3236C /* KeyChain.swift in Sources */,
+				A7010072281AF1B700E3236C /* LoginViewModel.swift in Sources */,
 				A73EB2DA281682350031FCEC /* StringConstants.swift in Sources */,
+				A701004F281A7DC500E3236C /* HomeViewController.swift in Sources */,
+				A7010068281A9DEC00E3236C /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,11 +389,12 @@
 		A7748BDE280E53CD0069ED73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RYLP63S2K7;
+				DEVELOPMENT_TEAM = JJQT88D763;
 				EXCLUDED_ARCHS = x86_64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,6 +415,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mariam.CustomUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -417,11 +426,12 @@
 		A7748BDF280E53CD0069ED73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RYLP63S2K7;
+				DEVELOPMENT_TEAM = JJQT88D763;
 				EXCLUDED_ARCHS = x86_64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,6 +452,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mariam.CustomUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
