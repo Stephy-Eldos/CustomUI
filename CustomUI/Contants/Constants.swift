@@ -7,7 +7,14 @@
 
 import Foundation
 
-public struct StringConstants {
+public struct Constants {
+    
+    public struct Limits {
+      static let MobileMinLength = 8
+      static let MobileMaxLength = 16
+      static let PasswordMinChar = 6
+      static let PasswordMaxChar = 15
+    }
     
     public struct AlertMessage {
         public static let loginSuccess = "Login Success"

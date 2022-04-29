@@ -39,22 +39,22 @@ class ViewController: UIViewController {
                         self.navigationController?.pushViewController(signUpVC, animated: true)
                         
                     } else {
-                        PopAlertView.popWithTitle(message: StringConstants.AlertMessage.incorrectPassword) {
+                        PopAlertView.popWithTitle(message: Constants.AlertMessage.incorrectPassword) {
                             Void()
                         }
                     }
                 } else {
-                    PopAlertView.popWithTitle(message: StringConstants.AlertMessage.NotRegisteredUser) {
+                    PopAlertView.popWithTitle(message: Constants.AlertMessage.NotRegisteredUser) {
                         Void()
                     }
                 }
             } else {
-                PopAlertView.popWithTitle(message: StringConstants.AlertMessage.enterPassword) {
+                PopAlertView.popWithTitle(message: Constants.AlertMessage.enterPassword) {
                     Void()
                 }
             }
         } else {
-            PopAlertView.popWithTitle(message: StringConstants.AlertMessage.enterEmail) {
+            PopAlertView.popWithTitle(message: Constants.AlertMessage.enterEmail) {
                 Void()
             }
         }

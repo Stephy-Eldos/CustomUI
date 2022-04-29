@@ -37,28 +37,28 @@ class RegisterViewController: UIViewController {
         if !inputFieldUsername.text!.isEmpty || !inputFieldPassword.text!.isEmpty || !inputFieldConfirmPassword.text!.isEmpty || !inputFieldFirstName.text!.isEmpty || !inputFieldLastName.text!.isEmpty || !inputFieldEmployeeID.text!.isEmpty || !inputFieldMobileNo.text!.isEmpty {
             if EmailValidator.validate(input: inputFieldUsername.text) {
                 if !labelPasswordMatched.isHidden {
-                    if MobileValidator.validate(input: inputFieldMobileNo.text) {
-                        PopAlertView.popWithTitle(message: StringConstants.AlertMessage.registerSuccess) {
+                    if MobileValidator.validate(input: inputFieldMobileNo.text, min: Constants.Limits.MobileMinLength, max: Constants.Limits.MobileMaxLength) {
+                        PopAlertView.popWithTitle(message: Constants.AlertMessage.registerSuccess) {
                             self.saveData()
                             self.dismiss(animated: true)
                         }
                     } else {
-                        PopAlertView.popWithTitle(message: StringConstants.AlertMessage.notValidMobile) {
+                        PopAlertView.popWithTitle(message: Constants.AlertMessage.notValidMobile) {
                             Void()
                         }
                     }
                 } else {
-                    PopAlertView.popWithTitle(message: StringConstants.AlertMessage.passwordMismatch) {
+                    PopAlertView.popWithTitle(message: Constants.AlertMessage.passwordMismatch) {
                         Void()
                     }
                 }
             } else {
-                PopAlertView.popWithTitle(message: StringConstants.AlertMessage.notValidEmail) {
+                PopAlertView.popWithTitle(message: Constants.AlertMessage.notValidEmail) {
                     Void()
                 }
             }
         } else {
-            PopAlertView.popWithTitle(message: StringConstants.AlertMessage.fillAllFields) {
+            PopAlertView.popWithTitle(message: Constants.AlertMessage.fillAllFields) {
                 Void()
             }
         }
