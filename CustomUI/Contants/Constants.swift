@@ -27,5 +27,8 @@ public struct Constants {
         public static let passwordMismatch = "Password Mismatch"
         public static let NotRegisteredUser = "Not a registered user. Please enter the registered email address"
         public static let incorrectPassword = "Incorrect Password"
+        public static let signoutMessage = "Do you want to sign out from this App?"
+        public static let signoutButton = "Sign Out"
+        public static let cancelButton = "Cancel"
     }
 }

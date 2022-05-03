@@ -212,40 +212,29 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSCoder;
 
 IB_DESIGNABLE
-SWIFT_CLASS("_TtC17CustomUIFramework11Bold24Label")
-@interface Bold24Label : UILabel
+SWIFT_CLASS("_TtC17CustomUIFramework11Bold22Label")
+@interface Bold22Label : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)prepareForInterfaceBuilder;
 @end
 
 @class NSNumber;
-@class UIColor;
-@class CALayer;
 
-IB_DESIGNABLE
-SWIFT_CLASS("_TtC17CustomUIFramework14GradientButton")
-@interface GradientButton : UIButton
-@property (nonatomic) IBInspectable CGFloat cornerRadius;
-@property (nonatomic, strong) IBInspectable UIColor * _Nonnull startColor;
-@property (nonatomic, strong) IBInspectable UIColor * _Nonnull endColor;
-@property (nonatomic) IBInspectable CGPoint startPoint;
-@property (nonatomic) IBInspectable CGPoint endPoint;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC17CustomUIFramework27HorizontalNavigationBarCell")
+@interface HorizontalNavigationBarCell : UICollectionViewCell
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)prepareForInterfaceBuilder;
-- (void)layoutSublayersOfLayer:(CALayer * _Nonnull)layer;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImage;
 @class NSString;
+@class UIColor;
 
 IB_DESIGNABLE
 SWIFT_CLASS("_TtC17CustomUIFramework10InputField")
 @interface InputField : UIView
-@property (nonatomic, strong) IBInspectable UIImage * _Nullable image;
-@property (nonatomic, strong) IBInspectable UIImage * _Nullable rightActionImage;
+@property (nonatomic, copy) IBInspectable NSString * _Nullable rightActionText;
 @property (nonatomic, copy) IBInspectable NSString * _Nullable placeholder;
 @property (nonatomic, copy) IBInspectable NSString * _Nullable text;
 @property (nonatomic) IBInspectable NSInteger numberOfLines;
@@ -263,6 +252,8 @@ SWIFT_CLASS("_TtC17CustomUIFramework10InputField")
 
 @interface InputField (SWIFT_EXTENSION(CustomUIFramework)) <UITextFieldDelegate>
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 @end
 
 
@@ -276,10 +267,67 @@ SWIFT_CLASS("_TtC17CustomUIFramework12Light14Label")
 
 
 IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework13Medium18Label")
+@interface Medium18Label : UILabel
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework13NavigationBar")
+@interface NavigationBar : UIView
+@property (nonatomic, copy) IBInspectable NSString * _Nullable title;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+SWIFT_CLASS("_TtC17CustomUIFramework13NavigationTab")
+@interface NavigationTab : UIView
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UICollectionView;
+@class NSIndexPath;
+@class UICollectionViewLayout;
+
+@interface NavigationTab (SWIFT_EXTENSION(CustomUIFramework)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIImage;
+
+IB_DESIGNABLE
 SWIFT_CLASS("_TtC17CustomUIFramework12PopAlertView")
 @interface PopAlertView : UIView
 @property (nonatomic, copy) IBInspectable NSString * _Nullable message;
 @property (nonatomic, copy) IBInspectable NSString * _Nullable affirmTitle;
+@property (nonatomic, strong) IBInspectable UIImage * _Nullable affirmImage;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+- (void)layoutSubviews;
+@end
+
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework22PopAlertViewTwoActions")
+@interface PopAlertViewTwoActions : UIView
+@property (nonatomic, copy) IBInspectable NSString * _Nullable message;
+@property (nonatomic, copy) IBInspectable NSString * _Nullable affirmTitle;
+@property (nonatomic, copy) IBInspectable NSString * _Nullable affirmTitle2;
 @property (nonatomic, strong) IBInspectable UIImage * _Nullable affirmImage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -327,8 +375,40 @@ SWIFT_CLASS("_TtC17CustomUIFramework14Regular18Label")
 
 
 IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework17RoundedBlueButton")
+@interface RoundedBlueButton : UIButton
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+IB_DESIGNABLE
 SWIFT_CLASS("_TtC17CustomUIFramework13RoundedButton")
 @interface RoundedButton : UIButton
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull buttonBackgroundColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull textColor;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework17RoundedGrayButton")
+@interface RoundedGrayButton : UIButton
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework18RoundedWhiteButton")
+@interface RoundedWhiteButton : UIButton
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -346,29 +426,27 @@ SWIFT_CLASS("_TtC17CustomUIFramework15SemiBold20Label")
 
 
 IB_DESIGNABLE
-SWIFT_CLASS("_TtC17CustomUIFramework14TwoLinedButton")
-@interface TwoLinedButton : UIButton
-@property (nonatomic, copy) IBInspectable NSString * _Nullable primaryText;
-@property (nonatomic, copy) IBInspectable NSString * _Nullable secondaryText;
-@property (nonatomic, strong) IBInspectable UIColor * _Nonnull primaryTextColor;
-@property (nonatomic, strong) IBInspectable UIColor * _Nonnull secondaryTextColor;
-@property (nonatomic, strong) IBInspectable UIColor * _Nonnull buttonBackgroundColor;
+SWIFT_CLASS("_TtC17CustomUIFramework10TextButton")
+@interface TextButton : UIButton
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)prepareForInterfaceBuilder;
-- (void)layoutSubviews;
 @end
 
 
 IB_DESIGNABLE
-SWIFT_CLASS("_TtC17CustomUIFramework16UnderLinedButton")
-@interface UnderLinedButton : UIButton
+SWIFT_CLASS("_TtC17CustomUIFramework15TintedImageView")
+@interface TintedImageView : UIView
+@property (nonatomic, strong) IBInspectable UIImage * _Nullable image;
+@property (nonatomic, strong) UIColor * _Null_unspecified tintColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)prepareForInterfaceBuilder;
 @end
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -589,40 +667,29 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSCoder;
 
 IB_DESIGNABLE
-SWIFT_CLASS("_TtC17CustomUIFramework11Bold24Label")
-@interface Bold24Label : UILabel
+SWIFT_CLASS("_TtC17CustomUIFramework11Bold22Label")
+@interface Bold22Label : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)prepareForInterfaceBuilder;
 @end
 
 @class NSNumber;
-@class UIColor;
-@class CALayer;
 
-IB_DESIGNABLE
-SWIFT_CLASS("_TtC17CustomUIFramework14GradientButton")
-@interface GradientButton : UIButton
-@property (nonatomic) IBInspectable CGFloat cornerRadius;
-@property (nonatomic, strong) IBInspectable UIColor * _Nonnull startColor;
-@property (nonatomic, strong) IBInspectable UIColor * _Nonnull endColor;
-@property (nonatomic) IBInspectable CGPoint startPoint;
-@property (nonatomic) IBInspectable CGPoint endPoint;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC17CustomUIFramework27HorizontalNavigationBarCell")
+@interface HorizontalNavigationBarCell : UICollectionViewCell
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)prepareForInterfaceBuilder;
-- (void)layoutSublayersOfLayer:(CALayer * _Nonnull)layer;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImage;
 @class NSString;
+@class UIColor;
 
 IB_DESIGNABLE
 SWIFT_CLASS("_TtC17CustomUIFramework10InputField")
 @interface InputField : UIView
-@property (nonatomic, strong) IBInspectable UIImage * _Nullable image;
-@property (nonatomic, strong) IBInspectable UIImage * _Nullable rightActionImage;
+@property (nonatomic, copy) IBInspectable NSString * _Nullable rightActionText;
 @property (nonatomic, copy) IBInspectable NSString * _Nullable placeholder;
 @property (nonatomic, copy) IBInspectable NSString * _Nullable text;
 @property (nonatomic) IBInspectable NSInteger numberOfLines;
@@ -640,6 +707,8 @@ SWIFT_CLASS("_TtC17CustomUIFramework10InputField")
 
 @interface InputField (SWIFT_EXTENSION(CustomUIFramework)) <UITextFieldDelegate>
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 @end
 
 
@@ -653,10 +722,67 @@ SWIFT_CLASS("_TtC17CustomUIFramework12Light14Label")
 
 
 IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework13Medium18Label")
+@interface Medium18Label : UILabel
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework13NavigationBar")
+@interface NavigationBar : UIView
+@property (nonatomic, copy) IBInspectable NSString * _Nullable title;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+SWIFT_CLASS("_TtC17CustomUIFramework13NavigationTab")
+@interface NavigationTab : UIView
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UICollectionView;
+@class NSIndexPath;
+@class UICollectionViewLayout;
+
+@interface NavigationTab (SWIFT_EXTENSION(CustomUIFramework)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIImage;
+
+IB_DESIGNABLE
 SWIFT_CLASS("_TtC17CustomUIFramework12PopAlertView")
 @interface PopAlertView : UIView
 @property (nonatomic, copy) IBInspectable NSString * _Nullable message;
 @property (nonatomic, copy) IBInspectable NSString * _Nullable affirmTitle;
+@property (nonatomic, strong) IBInspectable UIImage * _Nullable affirmImage;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+- (void)layoutSubviews;
+@end
+
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework22PopAlertViewTwoActions")
+@interface PopAlertViewTwoActions : UIView
+@property (nonatomic, copy) IBInspectable NSString * _Nullable message;
+@property (nonatomic, copy) IBInspectable NSString * _Nullable affirmTitle;
+@property (nonatomic, copy) IBInspectable NSString * _Nullable affirmTitle2;
 @property (nonatomic, strong) IBInspectable UIImage * _Nullable affirmImage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -704,8 +830,40 @@ SWIFT_CLASS("_TtC17CustomUIFramework14Regular18Label")
 
 
 IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework17RoundedBlueButton")
+@interface RoundedBlueButton : UIButton
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+IB_DESIGNABLE
 SWIFT_CLASS("_TtC17CustomUIFramework13RoundedButton")
 @interface RoundedButton : UIButton
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull buttonBackgroundColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull textColor;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework17RoundedGrayButton")
+@interface RoundedGrayButton : UIButton
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC17CustomUIFramework18RoundedWhiteButton")
+@interface RoundedWhiteButton : UIButton
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -723,29 +881,27 @@ SWIFT_CLASS("_TtC17CustomUIFramework15SemiBold20Label")
 
 
 IB_DESIGNABLE
-SWIFT_CLASS("_TtC17CustomUIFramework14TwoLinedButton")
-@interface TwoLinedButton : UIButton
-@property (nonatomic, copy) IBInspectable NSString * _Nullable primaryText;
-@property (nonatomic, copy) IBInspectable NSString * _Nullable secondaryText;
-@property (nonatomic, strong) IBInspectable UIColor * _Nonnull primaryTextColor;
-@property (nonatomic, strong) IBInspectable UIColor * _Nonnull secondaryTextColor;
-@property (nonatomic, strong) IBInspectable UIColor * _Nonnull buttonBackgroundColor;
+SWIFT_CLASS("_TtC17CustomUIFramework10TextButton")
+@interface TextButton : UIButton
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)prepareForInterfaceBuilder;
-- (void)layoutSubviews;
 @end
 
 
 IB_DESIGNABLE
-SWIFT_CLASS("_TtC17CustomUIFramework16UnderLinedButton")
-@interface UnderLinedButton : UIButton
+SWIFT_CLASS("_TtC17CustomUIFramework15TintedImageView")
+@interface TintedImageView : UIView
+@property (nonatomic, strong) IBInspectable UIImage * _Nullable image;
+@property (nonatomic, strong) UIColor * _Null_unspecified tintColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)prepareForInterfaceBuilder;
 @end
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
