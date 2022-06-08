@@ -35,7 +35,6 @@ class RegisterViewController: UIViewController {
     
     @IBAction func onRegisterTapped(_ sender: Any) {
         if !inputFieldUsername.text!.isEmpty || !inputFieldPassword.text!.isEmpty || !inputFieldConfirmPassword.text!.isEmpty || !inputFieldFirstName.text!.isEmpty || !inputFieldLastName.text!.isEmpty || !inputFieldEmployeeID.text!.isEmpty || !inputFieldMobileNo.text!.isEmpty {
-            if EmailValidator.validate(input: inputFieldUsername.text) {
                 if !labelPasswordMatched.isHidden {
                     if MobileValidator.validate(input: inputFieldMobileNo.text, min: Constants.Limits.MobileMinLength, max: Constants.Limits.MobileMaxLength) {
                         PopAlertView.popWithTitle(message: Constants.AlertMessage.registerSuccess) {
@@ -52,11 +51,6 @@ class RegisterViewController: UIViewController {
                         Void()
                     }
                 }
-            } else {
-                PopAlertView.popWithTitle(message: Constants.AlertMessage.notValidEmail) {
-                    Void()
-                }
-            }
         } else {
             PopAlertView.popWithTitle(message: Constants.AlertMessage.fillAllFields) {
                 Void()

@@ -48,7 +48,7 @@ class RootViewController: UIViewController {
     func setUpRootAndRoute() {
  //       navigationBar.rootViewController = self
         navigationRouter = NavigationRouter(rootViewController: self)
-       navigationRouter?.loadViewControllerFromStoryboard(type: MainViewController.self)
+        navigationRouter?.loadViewControllerFromStoryboard(type: InsightsViewController.self)
     }
     
     func setUpHorizontalNavigationBar() {
@@ -59,10 +59,11 @@ class RootViewController: UIViewController {
 
         }, width: navItemWidth),
         NavigationTabItem(title: "Insights", image: UIImage(named: "box"), action: {
- 
+            self.navigationRouter?.loadViewControllerFromStoryboard(type: InsightsViewController.self)
             
         }, width: navItemWidth),
         NavigationTabItem(title: "Profile", image: UIImage(named: "user"), action: {
+            self.navigationRouter?.loadViewControllerFromStoryboard(type: ProfileViewController.self)
 
             }, width: navItemWidth)]
         navigationTab.items = items

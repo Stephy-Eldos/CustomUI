@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="height" constant="60" id="qTN-F0-TXx"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koQ-NN-bf3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koQ-NN-bf3" customClass="Regular20Label" customModule="CustomUIFramework">
                                 <rect key="frame" x="152.5" y="406" width="109" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,10 +72,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ug0-yE-x0m"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log in with existing account">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Log in with existing account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonLoginWith:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1yn-An-QsD"/>
                                 </connections>
@@ -85,8 +85,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4vC-9r-KW5"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="New? Create a login account"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="New? Create a login account"/>
                                 <connections>
                                     <action selector="buttonCreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUi-oR-fEA"/>
                                     <segue destination="WVT-a1-7P3" kind="popoverPresentation" popoverAnchorView="Iif-lE-hRr" id="FWc-13-ZJ1">
@@ -99,8 +99,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="qoj-Vo-4rp"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Activate card"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Activate card"/>
                                 <connections>
                                     <action selector="buttonActivateCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKo-q3-iLZ"/>
                                 </connections>
@@ -138,6 +138,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bVU-HY-Dqm"/>
                     <connections>
+                        <outlet property="buttonArrow" destination="opO-np-p91" id="Gpa-az-6f1"/>
                         <outlet property="containerLogin" destination="5Zg-VY-Zsj" id="L5g-Fa-ax0"/>
                         <outlet property="inputFieldPassword" destination="ueW-1W-5E8" id="MGy-ZL-fOF"/>
                         <outlet property="inputFieldUsername" destination="z7i-k9-zeD" id="HRW-xD-9PI"/>
@@ -170,6 +171,7 @@
                                 <userDefinedRuntimeAttribute type="string" keyPath="heading" value="Password"/>
                                 <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
                                 <userDefinedRuntimeAttribute type="string" keyPath="rightActionText" value="Forgot?"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l14-ox-8W4" customClass="RoundedGrayButton" customModule="CustomUIFramework">
@@ -177,11 +179,10 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="Efq-GH-J0t"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Login">
-                                <backgroundConfiguration key="background"/>
-                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </buttonConfiguration>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <connections>
                                 <action selector="onLoginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHV-ux-SBj"/>
                             </connections>
@@ -263,6 +264,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="heading" value="Password"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5T-kx-CYO" userLabel="Input Field3" customClass="InputField" customModule="CustomUIFramework">
@@ -274,6 +276,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="heading" value="Confirm Password"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwD-7F-9vw" userLabel="Input Field4" customClass="InputField" customModule="CustomUIFramework">

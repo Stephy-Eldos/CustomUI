@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Azure App Service - Sample Static HTML Site</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+          <h1>Azure App Service - Sample Static HTML Site</h1>
+          <hr/>
+      </div>
+    </div>
+
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container">
+        
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <img class="img-rectangle" src="azure-portal.png" alt="Azure App Service Web Apps" height="140">
+          <h2>Azure App Service Web Apps</h2>
+          <p>App Service Web Apps is a fully managed compute platform that is optimized for hosting websites and web applications. This platform-as-a-service (PaaS) offering of Microsoft Azure lets you focus on your business logic while Azure takes care of the infrastructure to run and scale your apps.</p>
+        </div>
+      </div>
+    </div>
+        
+       <!-- Create Button in another container -->
+       
+    <div class="container2">
+      <div class="row">
+       <button type="button"
+           style="height:40px;
+           width:200px;
+           border-radius: 20px;
+           border: 3px solid yellow;
+           left:20%;
+           right:20%;
+           position: absolute;
+           z-index: 2;
+           background: orange;
+           text-align:center;
+           color:white;
+           font-size:20px"
+           id="myBtn"
+           onclick="window.location.href='pageOne.html'">Click Me!</button>
+       <p id="demo"></p>
+
+       <script>
+       function buttonDisable() {
+         var x = document.getElementById("myBtn");
+         x.disabled = true;
+         
+       }
+           function pagemove(_url) {
+               location.href = _url;  // url: "./testwebTwo.html"
+           }
+       </script>
+      </div>
+    </div>
+    
+    
+    <h2
+        style="margin-top:100px"
+        >Type Something</h2>
+    <input type="text" id="myText" value="Some text...">
+    <p>Click the "Try it" button to get the text in the text field.</p>
+    <button
+        style="height:30px;
+        width:80px;
+        border-radius: 20px;
+        border: 3px solid black;
+        background: white;
+        text-align:center;
+        color:black"
+        onclick="myFunction()"><b>TRY IT</b></button>
+    <p id="demo"></p>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myText").value;
+      document.getElementById("demo").innerHTML = x;
+    }
+        function openWeb() {
+          console.log('Hellow Webview')
+        }
+
+    </script>
+    </body>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

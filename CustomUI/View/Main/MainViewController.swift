@@ -8,12 +8,14 @@
 import UIKit
 import CustomUIFramework
 
-class MainViewController: BaseViewController  {
+class MainViewController: BaseViewController {
     
     @IBOutlet weak var inputFieldUsername: InputField!
     @IBOutlet weak var inputFieldPassword: InputField!
     @IBOutlet var containerLogin: UIView!
     @IBOutlet weak var textViewDesc: UITextView!
+    @IBOutlet weak var buttonArrow: UIButton!
+    
     var containerView = UIView()
     var containerLoginHeight : CGFloat = 350
     var keyboardPresent : Bool = false
@@ -80,6 +82,7 @@ class MainViewController: BaseViewController  {
         let tapGesture = UITapGestureRecognizer(target: self,
                             action: #selector(slideUpViewTapped))
           containerView.addGestureRecognizer(tapGesture)
+   //     buttonArrow.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(self.slideUpViewTapped)))
         
         containerView.alpha = 0
           UIView.animate(withDuration: 0.5,
@@ -112,10 +115,14 @@ class MainViewController: BaseViewController  {
             self.containerView.alpha = 0
               self.containerLogin.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: self.containerLoginHeight)
           }, completion: nil)
+        inputFieldUsername.resignFirstResponder()
+        inputFieldPassword.resignFirstResponder()
     }
     
     @IBAction func buttonContainerArrow(_ sender: Any) {
         slideUpViewTapped()
+        inputFieldUsername.resignFirstResponder()
+        inputFieldPassword.resignFirstResponder()
     }
     
     @IBAction func buttonCreateAccount(_ sender: Any) {
@@ -147,7 +154,7 @@ class MainViewController: BaseViewController  {
                 }
             }
         } else {
-            PopAlertView.popWithTitle(message: Constants.AlertMessage.enterEmail) {
+            PopAlertView.popWithTitle(message: Constants.AlertMessage.enterUserID) {
                 Void()
             }
         }
